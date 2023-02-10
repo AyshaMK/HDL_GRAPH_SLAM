@@ -26,7 +26,7 @@ COPY ndt_omp /catkin_ws/src/ndt_omp
 
 RUN cd /catkin_ws && \
     . /opt/ros/${ROS_DISTRO}/setup.sh && \
-    rosdep init \
+    rosdep init &&\
     rosdep update && \
     rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y && \
     catkin config --install && \

@@ -30,3 +30,5 @@ RUN cd /catkin_ws && \
     rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y && \
     catkin config --install && \
     catkin build
+
+

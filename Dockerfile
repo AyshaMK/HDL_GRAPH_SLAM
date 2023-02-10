@@ -10,7 +10,7 @@ RUN wget http://ceres-solver.org/ceres-solver-2.1.0.tar.gz && \
     make test && \
     make install 
 RUN apt-get install -y libboost-all-dev python3-catkin-tools
-RUN apt-get install ros-noetic-geodesy ros-noetic-pcl-ros ros-noetic-nmea-msgs ros-noetic-libg2o
+RUN apt-get install -y ros-noetic-geodesy ros-noetic-pcl-ros ros-noetic-nmea-msgs ros-noetic-libg2o
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     rm -rf /var/lib/apt/lists/*
